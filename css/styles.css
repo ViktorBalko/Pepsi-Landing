@@ -27,11 +27,13 @@ a {
   display: block;
   width: 500px;
   height: 300px;
-  border-radius: 2em;
+  border-radius: 2em 0 0 2em;
   position: absolute;
   top: 28%;
   right: 0;
   background: #00000082;
+  -webkit-box-shadow: 2px 2px 50px 7px #6a6a6a;
+  box-shadow: 2px 2px 50px 27px #6a6a6a1f;
 }
 
 .sectionMain {
