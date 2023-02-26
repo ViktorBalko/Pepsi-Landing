@@ -1,0 +1,209 @@
+@import url("https://fonts.cdnfonts.com/css/retrolight?styles=121488");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f1f8fcb3;
+  font-family: "PepsiFont", sans-serif;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: PepsiFont;
+  src: url(../fonts/Harry\ Plain\ Regular.otf);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.span {
+  display: block;
+  width: 500px;
+  height: 300px;
+  border-radius: 2em;
+  position: absolute;
+  top: 28%;
+  right: 0;
+  background: #00000082;
+}
+
+.sectionMain {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background: #000d26;
+  transition: 0.7s;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 180px 30px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoPepsi {
+  position: relative;
+  max-width: 88px;
+  border: 2px solid #1da2f5a6;
+  border-radius: 50%;
+}
+.headerNavigate {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 400px;
+}
+
+.headerNavigate__link {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.headerNavigate__link:hover {
+  color: #a81911;
+  scale: 1.2;
+  transition: 1s;
+}
+
+.contentArea {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textArea {
+  position: relative;
+  max-width: 600px;
+}
+
+.textArea__inscription {
+  font-weight: 600;
+  font-size: 42px;
+  font-weight: 100;
+  color: #f3fbff41;
+  line-height: 250%;
+}
+
+.textArea__inscription span {
+  font-size: 200px;
+  font-weight: 300;
+  font-family: "Retrolight", sans-serif;
+  padding-left: 55px;
+  color: #f3fbff6a;
+}
+
+.textArea__paragraph {
+  line-height: 28px;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.textArea__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 1em;
+  border: none;
+  background: rgba(70, 69, 69, 0.262);
+  margin: 30px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  transition: 1s;
+}
+
+.textArea__link:hover {
+  color: #a81911;
+  scale: 1.2;
+  transition: 1s;
+  background-color: transparent;
+  border: none;
+}
+.imageArea {
+  display: flex;
+  width: 550px;
+  padding-right: 50px;
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+
+.imageArea__picture {
+  max-width: 260px;
+}
+
+.toggleArea {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.toggleArea__item {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggleArea__picture {
+  width: 40px;
+  margin: 0 60px;
+  transition: 0.7s;
+}
+
+.toggleArea__picture:hover {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.7s;
+  transform: rotate(350deg) translate(2px, -7px) skew(-1deg, 0deg);
+  scale: 1.8;
+}
+
+.socialArea {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.socialArea__item {
+  margin: 25px 0;
+}
+
+.socialArea__link {
+  filter: invert(0.8);
+  transition: 1s;
+}
+
+.socialArea__link:hover {
+  filter: invert(0.3);
+  transition: 1s;
+  color: #000000f6;
+  scale: -0.3;
+}

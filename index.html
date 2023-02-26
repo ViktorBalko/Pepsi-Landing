@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="sectionMain">
+      <span class="span"></span>
+      <header class="header">
+        <a href="#">
+          <img class="logoPepsi" src="./images/pepsilogo.png" />
+        </a>
+
+        <ul class="headerNavigate">
+          <li class="headerNavigate__item"><a class="headerNavigate__link" href="https://www.pepsi.com">home page</a></li>
+          <li class="headerNavigate__item"><a class="headerNavigate__link" href="https://contact.pepsico.com/pepsi/product-locator">products</a></li>
+          <li class="headerNavigate__item"><a class="headerNavigate__link" href="https://p.pepsi.com/signup">newsletter</a></li>
+          <li class="headerNavigate__item"><a class="headerNavigate__link" href="https://contact.pepsico.com/pepsi">contacts</a></li>
+        </ul>
+      </header>
+
+      <div class="contentArea">
+        <div class="textArea">
+          <h2 class="textArea__inscription">that's what<br />
+            <span>i like</span>
+          </h2>
+          <p class="textArea__paragraph">
+            * if you want to be a sexy - go to shop and drink a pepsi * if you want to be a sexy - go to shop and drink a pepsi * if you want to be a sexy - go to shop and drink a pepsi * if you want to be a sexy - go to shop and drink a pepsi * if you want to be a sexy - go to shop and drink a pepsi *
+          </p>
+          <a href="https://contact.pepsico.com/pepsi/product-locator(popup:open/signup)" class="textArea__link">sing up</a>
+        </div>
+
+        <div class="imageArea">
+          <img class="imageArea__picture" 
+               src="./images/pepsi001.png">
+          </img>
+        </div>
+      </div>
+
+      <ul class="toggleArea">
+         <li class="toggleArea__item">
+            <img class="toggleArea__picture" 
+                 src="./images/pepsi001.png"
+                 onclick="imageToggle('./images/pepsi001.png');
+                 changeBackgroundColor('#000d26')">
+         </li>
+
+         <li class="toggleArea__item">
+            <img class="toggleArea__picture" 
+                 src="./images/pepsi002.png"
+                 onclick="imageToggle('./images/pepsi002.png');
+                 changeBackgroundColor('#160103')">
+         </li>
+
+         <li class="toggleArea__item">
+            <img class="toggleArea__picture" 
+                 src="./images/pepsi003.png"
+                 onclick="imageToggle('./images/pepsi003.png');
+                 changeBackgroundColor('#000000f6')">
+         </li>
+      </ul>
+
+       <ul class="socialArea">
+          <li class="socialArea__item">
+            <a class="socialArea__link" href="https://www.facebook.com/pepsi/?locale=ru_RU">
+               <img src="./images/facebook.png">
+            </a>
+         </li>
+
+          <li class="socialArea__item">
+            <a class="socialArea__link" href="https://twitter.com/pepsi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+               <img src="./images/twitter.png">
+            </a>
+          </li>
+
+          <li class="socialArea__item">
+            <a class="socialArea__link" href="https://www.instagram.com/pepsi/">
+              <img src="./images/instagram.png">
+            </a>
+         </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imageToggle(anything){
+        document.querySelector('.imageArea__picture').src = anything;
+      }
+      function changeBackgroundColor(color){
+        const section = document.querySelector('.sectionMain');
+      section.style.background = color;
+      }
+   </script>
+
+  </body>
+</html>
